@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="img/logo.jpg">
+  <title>ViniSoft - Soluções em TI</title>
+  <!-- Fonte e ícones -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+    body {
+      background: linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),
+        url('https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=1600&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1519389950473-47ba0277781c') no-repeat center center/cover;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+      border-radius: 0 0 30px 30px;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      font-weight: 700;
+      text-shadow: 2px 2px 8px #222;
+    }
+    header p {
+      font-size: 1.3rem;
+      font-weight: 300;
+      text-shadow: 1px 1px 6px #222;
+    }
+    section {
+      padding: 50px 20px;
+      max-width: 1100px;
+      margin: auto;
+      background: rgba(255,255,255,0.85);
+      border-radius: 20px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    section h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 2rem;
+      color: #0077b6;
+      font-weight: 700;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card i {
+      font-size: 2rem;
+      color: #0077b6;
+      margin-bottom: 10px;
+    }
+    .card h3 {
+      margin-bottom: 10px;
+    }
+    .contact div {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.1rem;
+    }
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+      border-radius: 20px 20px 0 0;
+    }
+    .whatsapp-btn {
+      display: inline-block;
+      margin-top: 15px;
+      background: #25D366;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 30px;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .whatsapp-btn:hover {
+      background: #1ebe5d;
+    }
+    @media (max-width: 700px) {
+      header h1 { font-size: 2rem; }
+      section h2 { font-size: 1.3rem; }
+      section { padding: 30px 5px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ViniSoft</h1>
+    <p>Soluções em TI e Desenvolvimento Personalizado</p>
+  </header>
+
+  <section>
+    <h2>Serviços</h2>
+    <div class="services">
+      <div class="card">
+        <i class="fas fa-code"></i>
+        <h3>Desenvolvimento Web</h3>
+        <p>Desenvolvimento personalizado de sistemas para aplicações Web.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-print"></i>
+        <h3>Impressão com Dados Variáveis</h3>
+        <p>Impressão de cartas personalizadas, boletos, cobrança, promocionais e muito mais.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-lock"></i>
+        <h3>Segurança</h3>
+        <p>Seus dados protegidos e criptografados com as melhores práticas.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-chart-line"></i>
+        <h3>Otimização de SEO</h3>
+        <p>Leve seu site para um nível mais alto de competitividade.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Nossos Serviços</h2>
+    <p>Solução completa, desde o recebimento dos produtos até a entrega ao cliente final:</p>
+    <ul>
+      <li>Gerenciamento de estoque via WMS</li>
+      <li>Integrações com e-commerce</li>
+      <li>Armazenagem e estoque</li>
+      <li>Montagem de pedidos</li>
+      <li>Pick & Packing e transporte</li>
+      <li>Relacionamento com transportadoras</li>
+      <li>Indicadores de operação em tempo real</li>
+      <li>Condições de frete diferenciadas</li>
+    </ul>
+  </section>
+
+  <section class="about">
+    <h2>Sobre Nós</h2>
+    <div class="card">
+      <p>A ViniSoft nasceu para atender a necessidade de empresas de todos os portes com integração de software. 
+         Com 10 anos de experiência, nossa equipe está pronta para transformar seus desafios em soluções!</p>
+      <ul>
+        <br>
+        ✔ Preços justos
+        <br>
+        ✔ Equipe profissional
+        <br>
+        ✔ Suporte personalizado
+        <br>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contato</h2>
+    <div class="contact">
+      <div><i class="fas fa-map-marker-alt"></i> Rua das Figueiras, 16 - Franco da Rocha</div>
+      <div><i class="fas fa-phone"></i> +55 11 98178-1781</div>
+      <div><i class="fas fa-envelope"></i> vini.fernandes100997@gmail.com</div>
+      <a class="whatsapp-btn" href="https://wa.me/5511981781781" target="_blank"><i class="fab fa-whatsapp"></i> Falar no WhatsApp</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 ViniSoft - Todos os direitos reservados</p>
+  </footer>
+</body>
+</html>
